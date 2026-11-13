@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fan-made tribute to Punjabi singer and songwriter Sidhu Moose Wala.">
+  <title>sidhuinfo.com | Sidhu Moose Wala</title>
+  <style>
+    :root { --gold:#d8ad55; --gold2:#f4d58a; --ink:#090909; --panel:#15130f; --muted:#c8bfae; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--ink); color:#fff; font-family:Georgia, 'Times New Roman', serif; }
+    a { color:inherit; }
+    .topbar { position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:16px 7%; background:rgba(8,8,8,.94); border-bottom:1px solid #6f5527; backdrop-filter:blur(10px); }
+    .brand { color:var(--gold2); font-family:Arial,sans-serif; font-weight:800; letter-spacing:2px; text-decoration:none; font-size:1.15rem; }
+    nav { display:flex; flex-wrap:wrap; gap:18px; }
+    nav a { font:600 .88rem Arial,sans-serif; color:#eee; text-decoration:none; }
+    nav a:hover { color:var(--gold2); }
+    .hero { min-height:82vh; display:grid; place-items:center; text-align:center; padding:70px 8%; background:radial-gradient(ellipse at center, #302411 0%, #100e0a 45%, #050505 78%); border-bottom:1px solid #5d4825; }
+    .crown { font-size:2.4rem; color:var(--gold2); }
+    .eyebrow { color:var(--gold2); text-transform:uppercase; letter-spacing:5px; font:700 .75rem Arial,sans-serif; }
+    h1 { margin:18px 0 12px; font-size:clamp(2.8rem,9vw,6.8rem); line-height:.98; color:var(--gold2); text-shadow:0 4px 24px #000; }
+    .hero p { max-width:650px; color:#e7dfd1; font:1.08rem/1.7 Arial,sans-serif; }
+    .btn { display:inline-block; margin-top:22px; padding:13px 22px; border:1px solid var(--gold); color:var(--gold2); text-decoration:none; font:700 .9rem Arial,sans-serif; letter-spacing:1px; }
+    .btn:hover { background:var(--gold); color:#111; }
+    section { padding:76px 8%; }
+    .section-title { color:var(--gold2); font-size:clamp(2rem,5vw,3rem); margin:0 0 12px; }
+    .rule { width:75px; height:3px; background:var(--gold); margin:0 0 28px; }
+    .intro-grid { display:grid; grid-template-columns: minmax(220px, .85fr) 1.3fr; gap:38px; align-items:center; }
+    .portrait { width:100%; max-height:470px; object-fit:cover; border:2px solid var(--gold); box-shadow:12px 12px 0 #3a2b14; }
+    .bio { color:#ddd4c5; font:1rem/1.85 Arial,sans-serif; }
+    .facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+    .fact { border:1px solid #6f5527; padding:10px 13px; color:var(--gold2); font: .82rem Arial,sans-serif; }
+    .songs { background:#100e0a; border-top:1px solid #392d19; border-bottom:1px solid #392d19; }
+    .song-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:15px; }
+    .song { background:linear-gradient(145deg,#211a10,#100f0d); border:1px solid #5e4926; padding:22px; min-height:130px; }
+    .song span { color:var(--gold); font:700 .72rem Arial,sans-serif; letter-spacing:2px; }
+    .song h3 { margin:12px 0 0; color:#fff0cf; font-size:1.35rem; }
+    .song a { display:inline-block; margin-top:14px; color:var(--gold2); font: .8rem Arial,sans-serif; text-decoration:none; }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:16px; }
+    .gallery-grid figure { margin:0; background:#17130d; border:1px solid #604a24; padding:8px; }
+    .gallery-grid img { width:100%; height:270px; object-fit:cover; display:block; }
+    figcaption { padding:10px 5px 5px; color:var(--muted); font: .78rem/1.5 Arial,sans-serif; }
+    .note { color:#bfb6a7; font: .82rem/1.6 Arial,sans-serif; margin-top:20px; }
+    footer { text-align:center; padding:30px 7%; border-top:1px solid #604a24; color:#bfb6a7; font: .82rem/1.7 Arial,sans-serif; }
+    footer strong { color:var(--gold2); }
+    @media(max-width:700px) { .topbar { align-items:flex-start; flex-direction:column; } nav { gap:12px; } .intro-grid { grid-template-columns:1fr; } .portrait { max-height:420px; } section { padding:58px 7%; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">♛ SIDHUINFO.COM</a>
+    <nav aria-label="Main navigation">
+      <a href="#intro">Introduction</a>
+      <a href="#songs">Songs</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="crown">♛</div>
+        <div class="eyebrow">A fan-made tribute</div>
+        <h1>SIDHU<br>MOOSE WALA</h1>
+        <p>Remembering the voice, the music and the legacy of Shubhdeep Singh Sidhu — a Punjabi artist whose songs reached listeners around the world.</p>
+        <a class="btn" href="#intro">EXPLORE HIS STORY</a>
+      </div>
+    </section>
+
+    <section id="intro">
+      <div class="intro-grid">
+        <img class="portrait" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sidhu_Moose_Wala.jpg?width=900" alt="Sidhu Moose Wala during the shooting of Moosa Jatt">
+        <div>
+          <h2 class="section-title">The Artist. The Legacy.</h2>
+          <div class="rule"></div>
+          <p class="bio"><strong>Sidhu Moose Wala</strong> was the stage name of Shubhdeep Singh Sidhu, a Punjabi singer, rapper and songwriter from the village of Moosa in Mansa district, Punjab. He studied electrical engineering at Guru Nanak Dev Engineering College in Ludhiana before building a music career. His breakthrough song “So High” helped bring his distinctive Punjabi sound to a worldwide audience. He also acted in Punjabi films and released music through his own label, 5911 Records.</p>
+          <p class="bio">Born: 11 June 1993 · Moosa, Punjab<br>Remembered: 29 May 2022</p>
+          <div class="facts">
+            <div class="fact">PUNJABI MUSIC</div><div class="fact">SINGER & RAPPER</div><div class="fact">SONGWRITER</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="songs" id="songs">
+      <h2 class="section-title">🎵 Popular Songs</h2>
+      <div class="rule"></div>
+      <div class="song-grid">
+        <article class="song"><span>2017</span><h3>So High</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+So+High" target="_blank" rel="noopener">Find song ↗</a></article>
+        <article class="song"><span>2017</span><h3>Issa Jatt</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+Issa+Jatt" target="_blank" rel="noopener">Find song ↗</a></article>
+        <article class="song"><span>2018</span><h3>Famous</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+Famous" target="_blank" rel="noopener">Find song ↗</a></article>
+        <article class="song"><span>2019</span><h3>47</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+47" target="_blank" rel="noopener">Find song ↗</a></article>
+        <article class="song"><span>2020</span><h3>Dear Mama</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+Dear+Mama" target="_blank" rel="noopener">Find song ↗</a></article>
+        <article class="song"><span>2021</span><h3>Moosetape</h3><a href="https://www.youtube.com/results?search_query=Sidhu+Moose+Wala+Moosetape" target="_blank" rel="noopener">Explore album ↗</a></article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2 class="section-title">🖼️ Photo Gallery</h2>
+      <div class="rule"></div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sidhu_Moose_Wala.jpg?width=700" alt="Sidhu Moose Wala at a film shoot">
+          <figcaption>Sidhu Moose Wala — film set photograph. Photo: Shekha Gill / Wikimedia Commons, CC BY-SA 4.0.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sidhu_Moose_Wala_Interview_2019.jpg?width=700" alt="Sidhu Moose Wala during an interview">
+          <figcaption>Interview photograph. Source: Wikimedia Commons; check the file page for attribution and licence details.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sidhu_Moose_Wala_at_Moosa_01.jpg?width=700" alt="Sidhu Moose Wala at his village Moosa">
+          <figcaption>At his village Moosa. Source: Wikimedia Commons; confirm reuse permission before publishing.</figcaption>
+        </figure>
+      </div>
+      <p class="note">This is an independent fan tribute and is not an official Sidhu Moose Wala website. Before publishing publicly, check the reuse licence for each photograph and keep its required credit.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>SIDHUINFO.COM</strong><br>
+    Made with respect for the music and memory of Sidhu Moose Wala.<br>
+    Fan-made tribute · Not affiliated with the artist or his family.
+  </footer>
+</body>
+</html>
